@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Frameworks CSS y Librerías</title>
+  <!-- Bootstrap 5 CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    /* Ajustes de imágenes para que todas se vean uniformes */
+    .card-img-top {
+      max-height: 160px;
+      object-fit: contain;
+      margin: auto;
+    }
+
+    /* Efecto hover opcional */
+    .card-img-top:hover {
+      transform: scale(1.05);
+      transition: transform 0.3s ease-in-out;
+    }
+
+    /* Caso de uso estilo */
+    .use-case {
+      background: #f8f9fa;
+      border-left: 5px solid #0d6efd;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0px 2px 6px rgba(0,0,0,0.1);
+    }
+  </style>
+</head>
+<body class="bg-light">
+
+  <!-- Encabezado -->
+  <header class="bg-primary text-white text-center py-4 mb-4">
+    <h1 class="mb-0">Frameworks CSS y Librerías</h1>
+  </header>
+
+  <!-- Contenido principal -->
+  <main class="container">
+    <section class="mb-5">
+      <h2 class="text-center">¿Qué es un Framework?</h2>
+      <p class="text-center">
+        Un framework es una estructura reutilizable que sirve como base para el desarrollo de aplicaciones web, móviles o de escritorio. 
+        Su objetivo principal es que el programador no tenga que comenzar desde cero, ya que provee herramientas, librerías y convenciones predefinidas.
+      </p>
+    </section>
+
+    <section>
+      <h2 class="text-center mb-4">Tipos de Frameworks</h2>
+      <div class="row g-4">
+
+        <!-- Bootstrap -->
+        <div class="col-md-4">
+          <div class="card h-100 text-center shadow-sm">
+            <img src="img/Bootstrap_logo.png" class="card-img-top p-4" alt="Bootstrap Logo">
+            <div class="card-body">
+              <h5 class="card-title">Bootstrap</h5>
+              <p class="card-text">
+                Uno de los frameworks más populares. Ofrece grillas y componentes listos para crear páginas modernas y responsivas rápidamente.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Tailwind CSS -->
+        <div class="col-md-4">
+          <div class="card h-100 text-center shadow-sm">
+            <img src="img/Tailwind.png" class="card-img-top p-4" alt="Tailwind CSS Logo">
+            <div class="card-body">
+              <h5 class="card-title">Tailwind CSS</h5>
+              <p class="card-text">
+                Framework basado en utilidades, permite un control total del diseño mediante clases pequeñas y reutilizables. Perfecto para proyectos personalizados.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Materialize -->
+        <div class="col-md-4">
+          <div class="card h-100 text-center shadow-sm">
+            <img src="img/Materialize.png" class="card-img-top p-4" alt="Materialize Logo">
+            <div class="card-body">
+              <h5 class="card-title">Materialize</h5>
+              <p class="card-text">
+                Basado en Material Design de Google. Ofrece un estilo atractivo y estandarizado desde el inicio, ideal para quienes buscan coherencia visual.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- React + Material UI -->
+        <div class="col-md-6">
+          <div class="card h-100 text-center shadow-sm">
+            <img src="img/React.png" class="card-img-top p-4" alt="React Logo">
+            <div class="card-body">
+              <h5 class="card-title">React + Material UI</h5>
+              <p class="card-text">
+                React es una librería de JavaScript para crear interfaces dinámicas. Con Material UI se logran diseños modernos, responsivos y modulares.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Foundation -->
+        <div class="col-md-6">
+          <div class="card h-100 text-center shadow-sm">
+            <img src="img/foundation-logo-png.png" class="card-img-top p-4" alt="Foundation Logo">
+            <div class="card-body">
+              <h5 class="card-title">Foundation</h5>
+              <p class="card-text">
+                Framework centrado en accesibilidad y estándares. Ideal para proyectos donde la inclusión y compatibilidad son prioridad, como sitios educativos o gubernamentales.
+              </p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Caso de Uso -->
+    <section class="mt-5">
+      <h2 class="text-center mb-4">Caso de Uso</h2>
+      <div class="use-case">
+        <h5>Desarrollo de una Tienda Online con Bootstrap</h5>
+        <p>
+          Un pequeño negocio desea lanzar su primera tienda en línea. Gracias a <strong>Bootstrap</strong>, se construye una interfaz 
+          responsiva en poco tiempo, con navegación clara y componentes reutilizables. Esto permitió que el sitio fuera accesible 
+          tanto en computadoras como en dispositivos móviles, aumentando el alcance del negocio sin necesidad de una gran inversión inicial.
+        </p>
+        <ul>
+          <li><strong>Actor principal:</strong> Cliente de la tienda</li>
+          <li><strong>Objetivo:</strong> Comprar productos de manera sencilla y rápida</li>
+          <li><strong>Flujo principal:</strong> Ingresar al sitio → Explorar productos → Agregar al carrito → Realizar pago</li>
+        </ul>
+      </div>
+    </section>
+  </main>
+
+  <!-- Pie de página -->
+  <footer class="bg-dark text-white text-center py-3 mt-5">
+    <p class="mb-0">&copy; 2025 - Samuel Quintero | Contacto: 
+      <a href="mailto:squinterobu@unadvirtual.edu.co" class="text-white">squinterobu@unadvirtual.edu.co</a>
+    </p>
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
